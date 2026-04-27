@@ -1,0 +1,30 @@
+{
+  "name": "moodgo--1",
+  "version": "1.0.0",
+  "description": "MoodGo is a full stack web application that let user discover, create, and share their events with everyone. it provides a platform for users to connect and engage with others who share similar interests and passions.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "build": "npm install && cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Shruti Kesharwani",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.44.0",
+    "@google/generative-ai": "^0.24.1",
+    "@reduxjs/toolkit": "^2.11.2",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.9.0",
+    "colors": "^1.4.0",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.2",
+    "multer": "^2.1.1"
+  }
+}
