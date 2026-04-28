@@ -7,7 +7,7 @@
   "scripts": {
     "server": "node server/server.js",
     "client": "cd client && npm run dev",
-    "build": "npm install && cd client && npm install",
+    "build": "npm install --legacy-peer-deps && cd client && npm install --legacy-peer-deps",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
@@ -26,6 +26,6 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.2",
     "multer": "^2.1.1",
-    "vite": "^7.3.2"
+    "vite": "^5.4.14"
   }
 }
